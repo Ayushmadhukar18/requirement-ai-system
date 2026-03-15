@@ -1,7 +1,9 @@
 import json
 from groq import Groq
+from services.config import GROK_API_KEY
+
 import os
-os.environ["GROQ_API_KEY"] = "[REDACTED_GROK_KEY]"
+
 client = Groq()
 
 def analyze_risks(text: str):

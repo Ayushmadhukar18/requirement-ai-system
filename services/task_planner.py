@@ -1,8 +1,10 @@
 import json
 from groq import Groq
+from services.config import GROK_API_KEY
+
 import os
-os.environ["GROQ_API_KEY"] = "[REDACTED_GROK_KEY]"
-client = Groq()
+
+client = Groq(GROK_API_KEY)
 
 def plan_tasks(requirements, risks):
     """

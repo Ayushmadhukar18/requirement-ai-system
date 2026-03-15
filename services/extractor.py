@@ -1,6 +1,8 @@
 from groq import Groq
+from services.config import GROK_API_KEY
+
 import os
-os.environ["GROQ_API_KEY"] = "[REDACTED_GROK_KEY]"
+
 
 import json
 
