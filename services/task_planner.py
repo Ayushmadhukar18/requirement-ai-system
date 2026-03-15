@@ -1,8 +1,11 @@
 import json
 from groq import Groq
 import os
-os.environ["GROQ_API_KEY"] = "[REDACTED_GROK_KEY]"
-client = Groq()
+from dotenv import load_dotenv
+
+load_dotenv()
+
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def plan_tasks(requirements, risks):
     """

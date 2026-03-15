@@ -1,6 +1,6 @@
 from groq import Groq
 import os
-os.environ["GROQ_API_KEY"] = "[REDACTED_GROK_KEY]"
+os.environ["GROQ_API_KEY"] = "[]"
 
 import json
 
