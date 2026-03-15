@@ -1,10 +1,12 @@
 import json
 from groq import Groq
 from services.config import GROK_API_KEY
+from dotenv import load_dotenv
 
+load_dotenv()
 import os
 
-client = Groq(GROK_API_KEY)
+client = Groq(api_key=os.getenv("GROK_API_KEY"))
 
 def plan_tasks(requirements, risks):
     """
