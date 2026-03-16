@@ -176,10 +176,15 @@ The project follows a clean separation between routing, business logic, and pres
 
 ## 🐳 Run with Docker
 
-Run the container:
+Clone the repository:
+
+- `git clone <repo-url>`
+- `cd requirement-ai-system`
+
+Start the application:
 
 - `docker compose up --build`
 
-Open the application:
+Open in browser:
 
 - `http://localhost:8000`
