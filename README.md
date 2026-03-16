@@ -176,13 +176,9 @@ The project follows a clean separation between routing, business logic, and pres
 
 ## 🐳 Run with Docker
 
-Build the image:
-
-- `docker build -t requirement-ai-system .`
-
 Run the container:
 
-- `docker run -p 8000:8000 requirement-ai-system`
+- `docker compose up --build`
 
 Open the application:
 
