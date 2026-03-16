@@ -174,3 +174,16 @@ This approach reflects **best practices used in production GenAI systems**.
 
 The project follows a clean separation between routing, business logic, and presentation layers.
 
+## 🐳 Run with Docker
+
+Build the image:
+
+- `docker build -t requirement-ai-system .`
+
+Run the container:
+
+- `docker run -p 8000:8000 requirement-ai-system`
+
+Open the application:
+
+- `http://localhost:8000`
