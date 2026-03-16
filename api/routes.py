@@ -7,7 +7,11 @@ from services.parser import parse_pdf_upload
 
 router = APIRouter()
 
-
+=======
+# -----------------------------
+# 📌 RAW TEXT ANALYSIS (API)
+# -----------------------------
+>>>>>>> upstream/main
 @router.post("/api/analyze-text")
 async def analyze_text_api(text: str = Form(...)):
     try:
@@ -24,8 +28,11 @@ async def analyze_text_api(text: str = Form(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
-
+=======
+# -----------------------------
+# 📌 PDF ANALYSIS (API)
+# -----------------------------
+>>>>>>> upstream/main
 @router.post("/api/analyze-pdf")
 async def analyze_pdf_api(file: UploadFile = File(...)):
     try:
@@ -44,8 +51,11 @@ async def analyze_pdf_api(file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
-
+=======
+# -----------------------------
+# 🎨 UI — TEXT FORM
+# -----------------------------
+>>>>>>> upstream/main
 @router.post("/ui/analyze-text")
 async def analyze_text_ui(text: str = Form(...)):
     try:
@@ -64,8 +74,11 @@ async def analyze_text_ui(text: str = Form(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
-
+=======
+# -----------------------------
+# 🎨 UI — PDF UPLOAD
+# -----------------------------
+>>>>>>> upstream/main
 @router.post("/ui/analyze-pdf")
 async def analyze_pdf_ui(file: UploadFile = File(...)):
     try:

@@ -1,11 +1,19 @@
 from groq import Groq
+from services.config import GROK_API_KEY
+from dotenv import load_dotenv
+
+load_dotenv()
+
 import os
+
 os.environ["GROQ_API_KEY"] = "[]"
+=======
+
+>>>>>>> upstream/main
 
 import json
 
-
-client = Groq()
+client = Groq(api_key=os.getenv("GROK_API_KEY"))
 
 def extract_requirements(text):
     prompt = f"""
