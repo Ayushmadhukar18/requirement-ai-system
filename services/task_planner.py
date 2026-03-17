@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 import os
-<<<<<<< HEAD
+
 from dotenv import load_dotenv
 
 load_dotenv()
