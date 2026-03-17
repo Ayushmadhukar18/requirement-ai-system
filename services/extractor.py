@@ -6,10 +6,6 @@ load_dotenv()
 
 import os
 
-os.environ["GROQ_API_KEY"] = "[]"
-=======
-
->>>>>>> upstream/main
 
 import json
 
